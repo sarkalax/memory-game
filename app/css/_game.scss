@@ -1,0 +1,30 @@
+//VARIABLES
+$imgSize: 150px;
+$imgGap: 10px;
+$windowBreakpoint: 520px;
+
+#game {
+    display: grid;
+    width: auto;
+    height: $imgSize*2 + $imgGap;
+    gap: $imgGap;
+    grid-template-columns: repeat(3, 1fr);
+    // margin: auto;
+    // justify-content: center;
+    
+    @media (max-width: $windowBreakpoint) {
+        grid-template-columns: repeat(2, 1fr);
+        height: $imgSize*3 + $imgGap*2;
+    }
+} 
+img {
+    width: $imgSize;
+    height: $imgSize;
+    border-radius: 10px;
+    opacity: 100%;
+    transition: $animation;
+}
+img:hover {
+    opacity: 80%;
+    transform: scale(1.05);
+}

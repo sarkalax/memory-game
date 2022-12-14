@@ -1,0 +1,51 @@
+//FONT
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+// VARIABLES
+$animation: 300ms ease-in-out;
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+body {
+    min-width: 375px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(202, 248, 248);
+    
+    overflow: hidden;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+h1 {    
+    color: rgb(247, 207, 7);
+    margin-top: 20px;
+}
+button {
+    border: none;
+    align-self: center;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 15px 40px;
+    margin-top: 20px;
+
+    color: rgb(239, 253, 255);
+    background: rgb(99, 202, 185);
+    opacity: 70%;
+
+    transition: $animation;
+}
+button:hover {
+    opacity: 100%;
+}
+.hidden {
+    visibility: hidden;
+}
