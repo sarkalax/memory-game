@@ -2,4 +2,4 @@
 
 JS, Blender
 
-(open)[https://sarysx.github.io/memory-game/]
+[open](https://sarysx.github.io/memory-game/)
